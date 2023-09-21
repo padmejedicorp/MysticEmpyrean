@@ -20,9 +20,7 @@ int main() {
     circuit.cx(0, 1);
     circuit.h(0);
 
-    // Measure the qubits to be teleported (qubits 0 and 1)
-    circuit.measure(0, 0);
-    circuit.measure(1, 1);
+    
 
     // Apply conditional gates based on measurement outcomes
     circuit.cx(1, 2);
